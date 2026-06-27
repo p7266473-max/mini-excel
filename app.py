@@ -140,15 +140,7 @@ with st.sidebar.expander("📖 Formula Cheat Sheet", expanded=True):
     * **MATCH**: Locates the relative position of a lookup value in a range.
     """)
 
-# System Logic explanation sidebar section
-st.sidebar.markdown("---")
-st.sidebar.markdown("""
-### ⚙️ System Logic
-**Why Python is used for this process:**
-* **Automation:** Programmatically handles imports, validation, and real-time updates without manual recalculation steps.
-* **Precision:** Avoids floating-point discrepancies common in manual sheets, ensuring audit-safe decimals.
-* **Scalability:** Easily integrates with SQL databases and handles millions of transaction records concurrently.
-""")
+
 
 # Utility function to get column letter in Excel style (1-based)
 def get_column_letter(index):
