@@ -3,13 +3,19 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-# Set page configuration with a nice title and layout
-st.set_page_config(
-    page_title="Mini-Excel: Accounting & MIS Basics",
-    page_icon="📊",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
+st.set_page_config(page_title="Core Sandbox Engine", layout="wide")
+
+hide_platform_elements = """
+    <style>
+        [data-testid="stToolbar"] { display: none !important; }
+        [data-testid="stDecoration"] { display: none !important; }
+        [data-testid="stStatusWidget"] { visibility: hidden !important; }
+        header { visibility: hidden !important; }
+        footer { visibility: hidden !important; }
+        .block-container { padding-top: 2rem !important; }
+    </style>
+"""
+st.markdown(hide_platform_elements, unsafe_allow_html=True)
 
 # Custom CSS to enhance aesthetics (sleek cards and colors)
 st.markdown("""
