@@ -5,6 +5,22 @@ import altair as alt
 
 st.set_page_config(page_title="Core Sandbox Engine", layout="wide")
 
+st.markdown("""
+<style>
+#MainMenu {visibility: hidden; display: none !important;}
+header {visibility: hidden; display: none !important;}
+footer {visibility: hidden; display: none !important;}
+[data-testid="stHeader"] {visibility: hidden; display: none !important;}
+[data-testid="stFooter"] {visibility: hidden; display: none !important;}
+[data-testid="stToolbar"] {visibility: hidden; display: none !important;}
+[data-testid="stDecoration"] {visibility: hidden; display: none !important;}
+[data-testid="stStatusWidget"] {visibility: hidden; display: none !important;}
+.stAppDeployButton {display: none !important;}
+#stDecoration {display: none !important;}
+</style>
+""", unsafe_allow_html=True)
+
+
 
 # Custom CSS to enhance aesthetics (sleek cards and colors)
 st.markdown("""
