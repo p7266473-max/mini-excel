@@ -7,16 +7,24 @@ st.set_page_config(page_title="Core Sandbox Engine", layout="wide")
 
 st.markdown("""
 <style>
-#MainMenu {visibility: hidden; display: none !important;}
-header {visibility: hidden; display: none !important;}
-footer {visibility: hidden; display: none !important;}
-[data-testid="stHeader"] {visibility: hidden; display: none !important;}
-[data-testid="stFooter"] {visibility: hidden; display: none !important;}
-[data-testid="stToolbar"] {visibility: hidden; display: none !important;}
-[data-testid="stDecoration"] {visibility: hidden; display: none !important;}
-[data-testid="stStatusWidget"] {visibility: hidden; display: none !important;}
-.stAppDeployButton {display: none !important;}
-#stDecoration {display: none !important;}
+/* Hide Streamlit top header, toolbar, GitHub fork badges, menu, and decoration */
+#MainMenu {visibility: hidden !important; display: none !important;}
+header {visibility: hidden !important; display: none !important;}
+[data-testid="stHeader"] {visibility: hidden !important; display: none !important;}
+[data-testid="stToolbar"] {visibility: hidden !important; display: none !important;}
+[data-testid="stDecoration"] {visibility: hidden !important; display: none !important;}
+[data-testid="stStatusWidget"] {visibility: hidden !important; display: none !important;}
+.stAppDeployButton {visibility: hidden !important; display: none !important;}
+#stDecoration {visibility: hidden !important; display: none !important;}
+
+/* Hide Streamlit bottom footer and bottom-right viewer/host badges */
+footer {visibility: hidden !important; display: none !important;}
+[data-testid="stFooter"] {visibility: hidden !important; display: none !important;}
+.viewerBadge_container__16g3m {visibility: hidden !important; display: none !important;}
+[class*="viewerBadge"] {visibility: hidden !important; display: none !important;}
+[class*="styles_viewerBadge"] {visibility: hidden !important; display: none !important;}
+[class*="ViewerBadge"] {visibility: hidden !important; display: none !important;}
+.stActionButton {visibility: hidden !important; display: none !important;}
 </style>
 """, unsafe_allow_html=True)
 
@@ -25,31 +33,24 @@ footer {visibility: hidden; display: none !important;}
 # Custom CSS to enhance aesthetics (sleek cards and colors)
 st.markdown("""
 <style>
-    .main-header {
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: #1E3A8A;
-        margin-bottom: 0.5rem;
-    }
-    .sub-header {
-        font-size: 1.1rem;
-        color: #4B5563;
-        margin-bottom: 1.5rem;
-    }
-    .section-card {
-        background-color: #F9FAFB;
-        padding: 1.5rem;
-        border-radius: 0.5rem;
-        border-left: 5px solid #3B82F6;
-        margin-bottom: 1.5rem;
-    }
-    .result-box {
-        background-color: #ECFDF5;
-        border: 1px solid #10B981;
-        padding: 1rem;
-        border-radius: 0.375rem;
-        margin-bottom: 1rem;
-    }
+/* Hide Streamlit top header, toolbar, GitHub fork badges, menu, and decoration */
+#MainMenu {visibility: hidden !important; display: none !important;}
+header {visibility: hidden !important; display: none !important;}
+[data-testid="stHeader"] {visibility: hidden !important; display: none !important;}
+[data-testid="stToolbar"] {visibility: hidden !important; display: none !important;}
+[data-testid="stDecoration"] {visibility: hidden !important; display: none !important;}
+[data-testid="stStatusWidget"] {visibility: hidden !important; display: none !important;}
+.stAppDeployButton {visibility: hidden !important; display: none !important;}
+#stDecoration {visibility: hidden !important; display: none !important;}
+
+/* Hide Streamlit bottom footer and bottom-right viewer/host badges */
+footer {visibility: hidden !important; display: none !important;}
+[data-testid="stFooter"] {visibility: hidden !important; display: none !important;}
+.viewerBadge_container__16g3m {visibility: hidden !important; display: none !important;}
+[class*="viewerBadge"] {visibility: hidden !important; display: none !important;}
+[class*="styles_viewerBadge"] {visibility: hidden !important; display: none !important;}
+[class*="ViewerBadge"] {visibility: hidden !important; display: none !important;}
+.stActionButton {visibility: hidden !important; display: none !important;}
 </style>
 """, unsafe_allow_html=True)
 
